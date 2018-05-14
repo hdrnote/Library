@@ -181,9 +181,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../ch4 OOP/">
+        <li class="chapter " data-level="1.5" data-path="../Ch4 OOP/">
             
-                <a href="../ch4 OOP/">
+                <a href="../Ch4 OOP/">
             
                     
                     第四章 面向对象
@@ -195,9 +195,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="../ch4 OOP/OOP1.html">
+        <li class="chapter " data-level="1.5.1" data-path="../Ch4 OOP/OOP1.html">
             
-                <a href="../ch4 OOP/OOP1.html">
+                <a href="../Ch4 OOP/OOP1.html">
             
                     
                     面向对象上
@@ -208,9 +208,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../ch4 OOP/OOP2.html">
+        <li class="chapter " data-level="1.5.2" data-path="../Ch4 OOP/OOP2.html">
             
-                <a href="../ch4 OOP/OOP2.html">
+                <a href="../Ch4 OOP/OOP2.html">
             
                     
                     面向对象中
@@ -221,9 +221,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="../ch4 OOP/OOP3.html">
+        <li class="chapter " data-level="1.5.3" data-path="../Ch4 OOP/OOP3.html">
             
-                <a href="../ch4 OOP/OOP3.html">
+                <a href="../Ch4 OOP/OOP3.html">
             
                     
                     面向对象下
@@ -292,9 +292,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.4" data-path="对象序列化.md">
+        <li class="chapter " data-level="1.6.4" data-path="4_对象序列化.html">
             
-                <span>
+                <a href="4_对象序列化.html">
             
                     
                     对象的序列化
@@ -382,23 +382,29 @@
 <p>&#x2460; &#x8282;&#x70B9;&#x6D41;:&#x53EF;&#x4EE5;&#x4ECE;&#x6216;&#x5411;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x5730;&#x65B9;&#xFF08;&#x8282;&#x70B9;&#xFF09;&#x8BFB;&#x5199;&#x6570;&#x636E;.</p>
 <p>&#x2461; &#x5904;&#x7406;&#x6D41;:&#x662F;&#x5BF9;&#x4E00;&#x4E2A;&#x5DF2;&#x5B58;&#x5728;&#x7684;&#x6D41;&#x7684;&#x8FDE;&#x63A5;&#x548C;&#x5C01;&#x88C5;&#xFF0C;&#x901A;&#x8FC7;&#x6240;&#x5C01;&#x88C5;&#x7684;&#x6D41;&#x7684;&#x529F;&#x80FD;&#x8C03;&#x7528;&#x5B9E;&#x73B0;&#x6570;&#x636E;&#x8BFB;&#x5199;,</p>
 <p><img src="https://github.com/HuangYiCheng1997/create-picture-url/blob/master/java/CrazyJava/Java%20IO.png?raw=true" alt=""></p>
-<h2 id="&#x64CD;&#x4F5C;&#x8282;&#x70B9;&#x6D41;"><strong>&#x64CD;&#x4F5C;&#x8282;&#x70B9;&#x6D41;</strong></h2>
-<h3 id="&#x5B57;&#x8282;&#x6D41;"><strong>&#x5B57;&#x8282;&#x6D41;</strong></h3>
+<p><strong>&#x64CD;&#x4F5C;&#x6D41;&#x7A0B;&#xFF1A;</strong></p>
+<ol>
+<li><strong>&#x5904;&#x7406;&#x5B57;&#x8282;&#x8FD8;&#x662F;&#x5B57;&#x7B26;&#xFF1F;</strong></li>
+<li><strong>&#x8F93;&#x5165;&#x8FD8;&#x662F;&#x8F93;&#x51FA;&#xFF1F;</strong></li>
+<li><strong>&#x8282;&#x70B9;&#x6D41;&#x8FD8;&#x662F;&#x5904;&#x7406;&#x6D41;&#xFF1F;</strong></li>
+</ol>
+<h2 id="&#x5904;&#x7406;&#x5B57;&#x8282;">&#x5904;&#x7406;&#x5B57;&#x8282;</h2>
+<h3 id="&#x4F7F;&#x7528;&#x8282;&#x70B9;&#x6D41;">&#x4F7F;&#x7528;&#x8282;&#x70B9;&#x6D41;</h3>
 <pre class="language-"><code class="lang-java"><span class="token comment" spellcheck="true">//&#x5B57;&#x8282;&#x8F93;&#x5165;&#x6D41;</span>
 FileInputStream fis <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FileInputStream</span><span class="token punctuation">(</span>String fileName<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token comment" spellcheck="true">//&#x5B57;&#x8282;&#x8F93;&#x51FA;&#x6D41;</span>
 FileOutPutStream fos <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FileOutputStream</span><span class="token punctuation">(</span>String fileName<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">package</span> File<span class="token punctuation">;</span>
+<span class="token keyword">package</span> JavaIO<span class="token punctuation">;</span>
 
 <span class="token keyword">import</span> java<span class="token punctuation">.</span>io<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
 
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestFile</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">FileInputStreamTest</span> <span class="token punctuation">{</span>
 
     <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> IOException <span class="token punctuation">{</span>
 
         <span class="token comment" spellcheck="true">// &#x83B7;&#x53D6;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</span>
-        File oldFile <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">File</span><span class="token punctuation">(</span><span class="token string">&quot;C:\\Users\\Administrator\\Desktop\\&#x533A;&#x5757;&#x94FE;.txt&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        File newFile <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">File</span><span class="token punctuation">(</span><span class="token string">&quot;C:\\Users\\Administrator\\Desktop\\&#x65B0;&#x533A;&#x5757;&#x94FE;.txt&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        File oldFile <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">File</span><span class="token punctuation">(</span><span class="token string">&quot;C:\\Users\\Administrator\\Desktop\\oldSong.mp3&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        File newFile <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">File</span><span class="token punctuation">(</span><span class="token string">&quot;C:\\Users\\Administrator\\Desktop\\newSong.mp3&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token comment" spellcheck="true">// &#x68C0;&#x67E5;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x5B58;&#x5728;</span>
         <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>newFile<span class="token punctuation">.</span><span class="token function">exists</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
             newFile<span class="token punctuation">.</span><span class="token function">createNewFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -415,22 +421,47 @@ FileOutPutStream fos <span class="token operator">=</span> <span class="token ke
         System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;done&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 </code></pre>
-<h3 id="&#x5B57;&#x7B26;&#x6D41;"><strong>&#x5B57;&#x7B26;&#x6D41;</strong></h3>
-<pre class="language-"><code class="lang-java"><span class="token comment" spellcheck="true">//&#x5B57;&#x7B26;&#x8F93;&#x5165;&#x6D41;</span>
-FileReader fr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FileReader</span><span class="token punctuation">(</span>String fileName<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token comment" spellcheck="true">//&#x5B57;&#x7B26;&#x8F93;&#x51FA;&#x6D41;</span>
-FileWriter fw <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FileWriter</span><span class="token punctuation">(</span>String fileName<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">package</span> File<span class="token punctuation">;</span>
+<h3 id="&#x4F7F;&#x7528;&#x5904;&#x7406;&#x6D41;">&#x4F7F;&#x7528;&#x5904;&#x7406;&#x6D41;</h3>
+<pre class="language-"><code class="lang-java"><span class="token keyword">package</span> JavaIO<span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>io<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">BufferedInputStreamTest</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> IOException <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">// &#x83B7;&#x53D6;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</span>
+        File oldFile <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">File</span><span class="token punctuation">(</span><span class="token string">&quot;C:\\Users\\Administrator\\Desktop\\oldFile.txt&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        File newFile <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">File</span><span class="token punctuation">(</span><span class="token string">&quot;C:\\Users\\Administrator\\Desktop\\newFile.txt&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">// &#x68C0;&#x67E5;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x5B58;&#x5728;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>newFile<span class="token punctuation">.</span><span class="token function">exists</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            newFile<span class="token punctuation">.</span><span class="token function">createNewFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        BufferedInputStream input <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BufferedInputStream</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">FileInputStream</span><span class="token punctuation">(</span>oldFile<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        BufferedOutputStream output <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BufferedOutputStream</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">FileOutputStream</span><span class="token punctuation">(</span>newFile<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">byte</span><span class="token punctuation">[</span><span class="token punctuation">]</span> b <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">byte</span><span class="token punctuation">[</span><span class="token number">1024</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>input<span class="token punctuation">.</span><span class="token function">read</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">// &#x628A;&#x5185;&#x5BB9;&#x88C5;&#x8FDB;&#x6570;&#x7EC4;</span>
+        <span class="token punctuation">{</span>
+            output<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>b<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span>b<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        input<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        output<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;done&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="&#x5904;&#x7406;&#x5B57;&#x7B26;">&#x5904;&#x7406;&#x5B57;&#x7B26;</h2>
+<h3 id="&#x4F7F;&#x7528;&#x8282;&#x70B9;&#x6D41;">&#x4F7F;&#x7528;&#x8282;&#x70B9;&#x6D41;</h3>
+<pre class="language-"><code class="lang-java"><span class="token keyword">package</span> IO<span class="token punctuation">;</span>
 
 <span class="token keyword">import</span> java<span class="token punctuation">.</span>io<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
 
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestFile</span> <span class="token punctuation">{</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">FileReaderTest</span> <span class="token punctuation">{</span>
 
     <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> IOException <span class="token punctuation">{</span>
 
         <span class="token comment" spellcheck="true">// &#x83B7;&#x53D6;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;</span>
-        File oldFile <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">File</span><span class="token punctuation">(</span><span class="token string">&quot;C:\\Users\\Administrator\\Desktop\\&#x533A;&#x5757;&#x94FE;.txt&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        File newFile <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">File</span><span class="token punctuation">(</span><span class="token string">&quot;C:\\Users\\Administrator\\Desktop\\&#x65B0;&#x533A;&#x5757;&#x94FE;.txt&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        File oldFile <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">File</span><span class="token punctuation">(</span><span class="token string">&quot;C:\\Users\\Administrator\\Desktop\\oldFile.txt&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        File newFile <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">File</span><span class="token punctuation">(</span><span class="token string">&quot;C:\\Users\\Administrator\\Desktop\\newFile.txt&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>newFile<span class="token punctuation">.</span><span class="token function">exists</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
             newFile<span class="token punctuation">.</span><span class="token function">createNewFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>
@@ -449,9 +480,32 @@ FileWriter fw <span class="token operator">=</span> <span class="token keyword">
 
 <span class="token punctuation">}</span>
 </code></pre>
-<p><strong>&#x64CD;&#x4F5C;&#x8282;&#x70B9;&#x6D41;&#x4E00;&#x822C;&#x6BD4;&#x8F83;&#x9EBB;&#x70E6;,&#x4E0D;&#x5E38;&#x7528;,&#x6211;&#x4EEC;&#x6765;&#x5B66;&#x70B9;&#x5E38;&#x7528;&#x7684;</strong></p>
-<h2 id="&#x4F7F;&#x7528;&#x5904;&#x7406;&#x6D41;"><strong>&#x4F7F;&#x7528;&#x5904;&#x7406;&#x6D41;</strong></h2>
-<p><strong>&#x4F7F;&#x7528;&#x5904;&#x7406;&#x6D41;&#x5305;&#x88C5;&#x8282;&#x70B9;&#x6D41;,&#x8BA9;&#x5904;&#x7406;&#x6D41;&#x6267;&#x884C;&#x8F93;&#x5165;&#x8F93;&#x51FA;,&#x8BA9;&#x8282;&#x70B9;&#x6D41;&#x4E0E;&#x5E95;&#x5C42;IO&#x8BBE;&#x5907;&#x3001;&#x6587;&#x4EF6; &#x4EA4;&#x4E92;.</strong></p>
+<p><strong>&#x4F7F;&#x7528;&#x5904;&#x7406;&#x6D41;</strong></p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">package</span> IO<span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>io<span class="token punctuation">.</span>*<span class="token punctuation">;</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">BufferedReaderTest</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token keyword">throws</span> IOException <span class="token punctuation">{</span>
+        File oldFile <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">File</span><span class="token punctuation">(</span><span class="token string">&quot;C:\\Users\\hdr\\Desktop\\input.txt&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        File newFile <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">File</span><span class="token punctuation">(</span><span class="token string">&quot;C:\\Users\\hdr\\Desktop\\output.txt&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>newFile<span class="token punctuation">.</span><span class="token function">exists</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            newFile<span class="token punctuation">.</span><span class="token function">createNewFile</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        BufferedReader input <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BufferedReader</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">FileReader</span><span class="token punctuation">(</span>oldFile<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        BufferedWriter output <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BufferedWriter</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">FileWriter</span><span class="token punctuation">(</span>newFile<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">char</span><span class="token punctuation">[</span><span class="token punctuation">]</span> c <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">char</span><span class="token punctuation">[</span><span class="token number">1024</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span> <span class="token punctuation">(</span>input<span class="token punctuation">.</span><span class="token function">read</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            output<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>c<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span>c<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;done&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
 <h2 id="&#x91CD;&#x70B9;&#x5411;&#x6807;&#x51C6;&#x8F93;&#x5165;&#x8F93;&#x51FA;">&#x91CD;&#x70B9;&#x5411;&#x6807;&#x51C6;&#x8F93;&#x5165;/&#x8F93;&#x51FA;</h2>
 <p>System&#x7C7B;&#x91CC;&#x63D0;&#x4F9B;&#x4E86;&#x4E09;&#x4E2A;&#x91CD;&#x5B9A;&#x5411;&#x6807;&#x51C6;&#x8F93;&#x5165;\&#x8F93;&#x51FA;&#x7684;&#x65B9;&#x6CD5;.</p>
 <pre class="language-"><code class="lang-java"><span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">setErr</span><span class="token punctuation">(</span>PrintStream err<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -544,7 +598,7 @@ OutputStream <span class="token function">getOutputStream</span><span class="tok
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"IO流","level":"1.6.2","depth":2,"next":{"title":"RandomAccessFile.md","level":"1.6.3","depth":2,"path":"Ch5 IO/3_RandomAccessFile.md","ref":"Ch5 IO/3_RandomAccessFile.md","articles":[]},"previous":{"title":"File类","level":"1.6.1","depth":2,"path":"Ch5 IO/1_File类.md","ref":"Ch5 IO/1_File类.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-highlight","splitter","prism","toggle-chapters","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"livereload":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","author":"黄大仁","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"java基础","language":"zh-hans","gitbook":"*","description":"Java基础知识"},"file":{"path":"Ch5 IO/2_IO流.md","mtime":"2018-05-08T10:33:50.038Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-13T09:02:27.254Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"IO流","categories":["Java基础"],"tags":["Java IO"],"date":"2018-5-6","level":"1.6.2","depth":2,"next":{"title":"RandomAccessFile.md","level":"1.6.3","depth":2,"path":"Ch5 IO/3_RandomAccessFile.md","ref":"Ch5 IO/3_RandomAccessFile.md","articles":[]},"previous":{"title":"File类","level":"1.6.1","depth":2,"path":"Ch5 IO/1_File类.md","ref":"Ch5 IO/1_File类.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-highlight","splitter","prism","toggle-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"splitter":{},"toggle-chapters":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"黄大仁","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"java基础","language":"zh-hans","gitbook":"*","description":"Java基础知识"},"file":{"path":"Ch5 IO/2_IO流.md","mtime":"2018-05-11T13:09:47.590Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-14T01:50:08.116Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -559,10 +613,6 @@ OutputStream <span class="token function">getOutputStream</span><span class="tok
     
         
         <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

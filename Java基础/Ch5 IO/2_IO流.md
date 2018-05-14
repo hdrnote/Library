@@ -1,3 +1,12 @@
+---
+title : 2.IO流
+categories : 
+- Java基础 
+tags :
+- Java IO 
+date : 2018-5-6
+---
+
 # IO流
 
 把数据流动看作流水.
@@ -28,30 +37,36 @@
 
 
 
-## **操作节点流**
+**操作流程：**
 
-### **字节流**
+1. **处理字节还是字符？**
+2. **输入还是输出？**
+3. **节点流还是处理流？**
+
+## 处理字节
+
+### 使用节点流
 
 ```java
 //字节输入流
 FileInputStream fis = new FileInputStream(String fileName);
 //字节输出流
 FileOutPutStream fos = new FileOutputStream(String fileName);
-package File;
+package JavaIO;
 
 import java.io.*;
 
-public class TestFile {
+public class FileInputStreamTest {
 
 	public static void main(String[] args) throws IOException {
 
-		// 获取文件路径
-		File oldFile = new File("C:\\Users\\Administrator\\Desktop\\区块链.txt");
-		File newFile = new File("C:\\Users\\Administrator\\Desktop\\新区块链.txt");
+        // 获取文件路径
+        File oldFile = new File("C:\\Users\\Administrator\\Desktop\\oldSong.mp3");
+        File newFile = new File("C:\\Users\\Administrator\\Desktop\\newSong.mp3");
         // 检查文件是否存在
-		if (!newFile.exists()) {
-			newFile.createNewFile();
-		}
+        if (!newFile.exists()) {
+            newFile.createNewFile();
+        }
 
 		FileInputStream ofs = new FileInputStream(oldFile);
 		FileOutputStream nfs = new FileOutputStream(newFile);
@@ -63,27 +78,57 @@ public class TestFile {
 		}
 		System.out.println("done");
 	}
-
 ```
 
-### **字符流**
+### 使用处理流
 
 ```java
-//字符输入流
-FileReader fr = new FileReader(String fileName);
-//字符输出流
-FileWriter fw = new FileWriter(String fileName);
-package File;
+package JavaIO;
+
+import java.io.*;
+public class BufferedInputStreamTest {
+    public static void main(String[] args) throws IOException {
+        // 获取文件路径
+        File oldFile = new File("C:\\Users\\Administrator\\Desktop\\oldFile.txt");
+        File newFile = new File("C:\\Users\\Administrator\\Desktop\\newFile.txt");
+        // 检查文件是否存在
+        if (!newFile.exists()) {
+            newFile.createNewFile();
+        }
+
+        BufferedInputStream input = new BufferedInputStream(new FileInputStream(oldFile));
+        BufferedOutputStream output = new BufferedOutputStream(new FileOutputStream(newFile));
+
+        byte[] b = new byte[1024];
+        while (input.read(b) > 0)// 把内容装进数组
+        {
+            output.write(b,0,b.length);
+        }
+        input.close();
+        output.close();
+        System.out.println("done");
+    }
+}
+```
+
+
+
+## 处理字符
+
+### 使用节点流
+
+```java
+package IO;
 
 import java.io.*;
 
-public class TestFile {
+public class FileReaderTest {
 
 	public static void main(String[] args) throws IOException {
 
 		// 获取文件路径
-		File oldFile = new File("C:\\Users\\Administrator\\Desktop\\区块链.txt");
-		File newFile = new File("C:\\Users\\Administrator\\Desktop\\新区块链.txt");
+		File oldFile = new File("C:\\Users\\Administrator\\Desktop\\oldFile.txt");
+		File newFile = new File("C:\\Users\\Administrator\\Desktop\\newFile.txt");
 		if (!newFile.exists()) {
 			newFile.createNewFile();
 		}
@@ -103,11 +148,34 @@ public class TestFile {
 }
 ```
 
-**操作节点流一般比较麻烦,不常用,我们来学点常用的**
+**使用处理流**
 
-## **使用处理流**
+```java
+package IO;
 
-**使用处理流包装节点流,让处理流执行输入输出,让节点流与底层IO设备、文件 交互.**
+import java.io.*;
+
+public class BufferedReaderTest {
+
+    public static void main(String[] args) throws IOException {
+        File oldFile = new File("C:\\Users\\hdr\\Desktop\\input.txt");
+        File newFile = new File("C:\\Users\\hdr\\Desktop\\output.txt");
+
+        if (!newFile.exists()) {
+            newFile.createNewFile();
+        }
+
+        BufferedReader input = new BufferedReader(new FileReader(oldFile));
+        BufferedWriter output = new BufferedWriter(new FileWriter(newFile));
+
+        char[] c = new char[1024];
+        while (input.read(c) > 0) {
+            output.write(c,0,c.length);
+        }
+        System.out.println("done");
+    }
+}
+```
 
 
 
