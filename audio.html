@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>录音</title>
+</head>
+<body>
+<script>
+    function gotStream(stream) {
+        window.AudioContext = window.AudioContext || window.webkitAudioContext;
+        var audioContext = new AudioContext();
+
+        // Create an AudioNode from the stream.
+        var mediaStreamSource = audioContext.createMediaStreamSource(stream);
+
+        // Connect it to the destination to hear yourself (or any other node for processing!)
+        mediaStreamSource.connect(audioContext.destination);
+    }
+
+    navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia;
+    navigator.getUserMedia({audio: true}, gotStream,function (err) {
+        console.log("The following gUM error occured: " + err);
+    });
+</script>
+</body>
+</html>
